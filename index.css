@@ -73,6 +73,11 @@
 .blog-preview-details h1{
     font-size: 1.2rem;
     margin-top: 1rem;
+    cursor: pointer;
+}
+
+.blog-preview-details h1:hover{
+    color: var(--yellow);
 }
 
 .blog-preview-details p{
@@ -100,4 +105,29 @@
 .avatar img{
     width: 100%;
     height: 100%;
+}
+
+.attribution{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 375px){
+    .blog-preview-component{
+        padding: 1rem;
+    }
+
+    .blog-preview-card{
+        width: 95%;
+    }
+
+    .attribution{
+        font-size: var(--font-size);
+        padding: 1.5rem 1rem;
+    }
 }
